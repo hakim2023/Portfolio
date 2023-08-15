@@ -1,0 +1,73 @@
+.banner-image1{
+    background-image: url('../../assets/background.jpeg');  
+
+    margin: 0 auto;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.9); 
+    z-index: -2;
+   /* margin-bottom: 75px !important;   */
+   
+}
+
+.hero{
+    font-family: 'Lobster Two', cursive;
+}
+.ouadie{
+    background:linear-gradient(to right bottom ,#1da0f2bd , #6cc3fa  );
+    padding: 0 0.2em ;
+    display: inline-block;
+    transform: skewX(-10deg) ;
+    border: 0px solid beige;
+}
+
+.hexagone{
+    position: relative;
+    width: 400px;
+    height:400px;
+    @media screen and (max-width: 600px) {
+      
+            position: relative;
+            width: 250px;
+            height:250px;
+            
+        
+    }
+    
+   
+}
+.shape{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: rgb(3, 2, 2);
+    opacity: 0.7;
+    
+    
+}
+.cv{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold !important;
+}
+
+.mail{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #1DA1F2;
+    position: absolute;
+    top:4%;
+    left:4%;
+}
+.fa-envelope{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    
+}
+

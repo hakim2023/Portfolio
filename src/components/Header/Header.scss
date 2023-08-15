@@ -1,0 +1,116 @@
+.navbar{
+    background-color:    	#0e0e0e   !important;
+
+            .navbar-brand{
+                font-family: 'Lobster Two', cursive;
+                font-size: 2.5rem;
+                background: -webkit-linear-gradient( #146ba1,#1DA1F2, #4eb4f3
+                ) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            }
+           
+            .nav__item{
+                @media screen and (max-width: 992px) {
+              width: 80%;   
+              margin: 0 auto;
+               }
+            }
+                    .navbar__link{
+                        font-size:1.2rem ;
+                        color: rgb(255, 255, 255) !important;
+                        font-family: 'Poppins', sans-serif;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 8px;
+                        width: 100%;
+                    
+                    
+                    }
+                    .navbar__link:hover{
+                        
+                        color: rgb(178, 243, 248) !important;
+                    }
+                    // .active{
+                    //     background-color: #0b74b6 !important;
+                    //     color: white !important;
+                    //     border-radius: 8px;
+                    //     left: 0;
+                    //     transition: 0.5s ease-in-out ;
+                        
+                    // }
+            };
+
+
+/* navbar collapsing */
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    padding: 1rem;
+    transition: 0.5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+}
+
+.toggler-icon{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #1da0f2bd;
+  border-radius: 1px;
+  opacity: 1;
+  left:0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.navbar-toggler.collapsed .toggler-icon{
+background-color:white;
+}
+.top-bar{
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.bottom-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+.mid-bar{
+  margin-top: 0px;
+  opacity:0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -17px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 17px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .mid-bar{
+  opacity:1;
+  filter: alpha(opacity=100);
+ 
+}
+
+    
