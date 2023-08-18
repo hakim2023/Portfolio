@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ProgressBar } from 'react-bootstrap';
+// import { ProgressBar } from 'react-bootstrap';
 import './Progress-bar.scss';
+import { Line } from 'rc-progress';
 
 export default function ProgressBarLanguages(props) {
   const [isInViewport, setIsInViewport] = useState(false);
@@ -34,9 +35,12 @@ export default function ProgressBarLanguages(props) {
     <div>
       <div className="row progress__container" ref={progressContainerRef}>
         <div className="col-12 col-lg-2">{props.name}</div>
-        <div className="col-12 col-lg-8">
+        <div className=" col-12 col-lg-8">
           <div className="progress">
-            <ProgressBar now={progressBarNow} style={{ width:  '100%', background: props.color }} variant ={props.color} />
+            {/* <ProgressBar now={progressBarNow} style={{ width:  '100%', background: props.color }} variant ={props.color} /> */}
+            <Line percent={progressBarNow}  strokeColor={props.color} style={{ width:  '100%'}} />
+            {/* <Line percent={10} strokeWidth={4} strokeColor="#D3D3D3" />
+            <Circle percent={10} strokeWidth={4} strokeColor="#D3D3D3" />  */}
           </div>
         </div>
       </div>

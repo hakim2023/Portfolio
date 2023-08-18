@@ -71,3 +71,35 @@
     
 }
 
+
+.title-container{
+  display: flex;
+  gap: 1rem;
+}
+.github__container{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    width: 18rem;
+    height: 5em;
+    color: white;
+    cursor: pointer;
+    .github__icon{
+        font-size: 2rem;
+        // border: 1px solid blue;
+    }
+    h2{
+        // border: 1px solid blue;
+        line-height: 4.5rem;
+        
+       
+    }
+}.github__container:hover{
+    color: #7ec0ea;
+  
+}

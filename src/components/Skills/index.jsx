@@ -1,7 +1,11 @@
 import React from 'react'
 import './Skills.scss'
 import ProgressBar from './../../components/Progress-bar'
+import CircleBar from './../../components/Circle-bar'
 import {skills} from './../../data/skills';
+
+import { Line, Circle } from 'rc-progress';
+import { languages } from '../../data/languages';
 
 let skillsLeft = skills.filter((skill) => {
   return skill.id%2 === 0;
@@ -27,8 +31,8 @@ export default function Skills() {
     
 
     <div className="row">
-      <div className="col-8 mx-auto py-3">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quibusdam quam ipsam blanditiis sunt in sequi quidem.</p>
+      <div className="col-10 col-lg-8 mx-auto py-3 ">
+          <p>Je suis compétent en développement web avec maîtrise de HTML, CSS, React, et Express.js. Mon expérience couvre la création d'interfaces dynamiques et de serveurs robustes.</p>
       </div>
     </div>
 
@@ -62,17 +66,37 @@ export default function Skills() {
                               />  
                                          
                                 ))}   
+                               
+              
                      </div>
                  
 
                 </div>
+                <div className=" comp-contain row   flex-md-row flex-column  align-items-center  justify-content-center  py-5 mt-3 ">
+                <div className="col-lg-5  col-11 ">
+                        <h3 className="col-10 mx-auto  pb-3 py-4">Langues</h3>
+                        <p>Je suis un locuteur natif de l'arabe, ma langue maternelle. Je possède une solide expérience en français, me permettant de communiquer efficacement. Mon niveau d'anglais est avancé, ce qui me permet de m'engager de manière fluide et précise dans cette langue.</p>
+                    </div>
+
+                <div className=" col-lg-6  col-11 d-flex flex-wrap justify-content-center gap-2 align-items-center doughnut">
+                {languages.map((language) => (
+                                
+                                <CircleBar
+                                              key={language.id}
+                                              name={language.name}
+                                              color={language.color}
+                                              level={language.level}
+                              />     
+                                ))}   
+                </div>
+                </div>
           </div>
          </div>
          </div>
-
+         
          </section>
 <section id='projets'>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nisi necessitatibus similique eos error, quos molestias dicta iusto dolorum eveniet nihil natus explicabo? Doloribus quaerat aut minus cumque! Incidunt, iste.
+  <p style={{color:'black'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nisi necessitatibus similique eos error, quos molestias dicta iusto dolorum eveniet nihil natus explicabo? Doloribus quaerat aut minus cumque! Incidunt, iste.
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam ducimus laudantium, dolores atque suscipit neque voluptates debitis sed ea velit libero, incidunt dolorum minus tenetur! Soluta ea ut doloremque.
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, velit delectus? Placeat, minima expedita iure inventore velit accusantium culpa explicabo, fugit asperiores suscipit assumenda, dignissimos provident corrupti totam nostrum doloribus?
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quasi? Consequuntur reprehenderit numquam ex natus modi unde, eos quas accusamus quasi adipisci aspernatur iste quis consectetur. Iste asperiores temporibus reprehenderit.

@@ -1,0 +1,19 @@
+.circle__container{
+    width:100%;
+    transition: stroke-dashoffset 3s ease-in-out // Adjust the duration here
+}
+.svg {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    border: #16ac72;
+}
+.circle1 {
+    fill:none;
+    stroke-width: 15px;
+    // stroke-dasharray: 377;
+    // stroke-dashoffset: 377;
+    transition: 0.8s ease-in-out;
+   
+
+}
