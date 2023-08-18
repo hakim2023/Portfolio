@@ -1,0 +1,27 @@
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:#1e1e1e;
+        padding: 66px 0px 29px 0px; 
+        margin-top: auto;
+        width: 100%;
+        @media only screen and (max-width: 800px) {
+               
+            padding: 40px 0px 29px 0px; 
+            }
+
+        h3{
+            color:#e0e0e0;
+            font-weight: 100;
+            font-size: 1em;
+            @media only screen and (max-width: 600px) {
+               
+               font-size: 19px; 
+               text-align: center;        
+               }
+            
+         }
+}

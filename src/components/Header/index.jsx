@@ -135,7 +135,7 @@ export default function Header() {
                     activeSection === 'accueil' ? 'active' : ''
                   }`}
                   smooth={true}
-                  duration={500}
+                  duration={100}
                 >
                   Accueil
                 </ScrollLink>
@@ -146,8 +146,9 @@ export default function Header() {
                   className={`navbar__link ${
                     activeSection === 'competences' ? 'active' : ''
                   }`}
+              
                   smooth={true}
-                  duration={500}
+                  duration={100}
                 >
                   Compétences
                 </ScrollLink>
@@ -159,7 +160,7 @@ export default function Header() {
                     activeSection === 'projets' ? 'active' : ''
                   }`}
                   smooth={true}
-                  duration={500}
+                  duration={100}
                 >
                   Projets
                 </ScrollLink>
@@ -171,7 +172,7 @@ export default function Header() {
                     activeSection === 'contact' ? 'active' : ''
                   }`}
                   smooth={true}
-                  duration={500}
+                  duration={100}
                 >
                   Contact
                 </ScrollLink>

@@ -28,9 +28,9 @@ export const skills = [
       },
          {
         id:5,
-        name:'SEO',
+        name:'MangoDB',
         color:'#e48e00',
-        percentage:65
+        percentage:30
      },
      {
         id:6,

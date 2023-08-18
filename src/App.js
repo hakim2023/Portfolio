@@ -5,7 +5,7 @@ import Error from './pages/Error'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import Banner from './components/Banner'
+
 
 function App() {
 
