@@ -1,0 +1,84 @@
+.accordion-header{
+    background: linear-gradient(to bottom , rgb(204, 218, 218) , rgb(180, 191, 200)) !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.accordion-header > .bars{
+    
+    padding: 0.7em;
+    transition: all 0.6s ease-in;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 50px;
+    position: relative;
+    background-color: rgb(90, 175, 255);
+}
+.accordion-bar{
+    width:15px;
+    height: 2px;
+    background-color: rgb(44, 44, 44);
+   
+  
+   
+}
+.bar--down{
+    position: absolute;
+    
+    transform: rotate(90deg);
+    opacity: 1;
+    
+  
+}
+
+.bar--up{
+    position: absolute;
+    transition: all 0.6s ease-in;
+    opacity: 1;
+    
+  
+}
+.bar--down{
+      
+    transform: rotate(-180deg);
+    transition: all 0.5s ease;
+    
+    }
+    .bar--up{
+       // transform: rotate(90deg);
+       transition: all 0.5s ease;
+       transform: rotate(90deg);
+    }
+
+
+.p{
+    // padding: 0rem 0rem 0rem 1.5rem;
+     background-color: none;
+     color: white;
+     font-size: 13px !important;
+     line-height: 32px;
+     overflow: hidden;
+     max-height: 0px;
+    //  border-bottom-left-radius: 15px;
+    //  border-bottom-right-radius: 15px;
+     margin: 0; 
+    
+    
+     @media only screen and (max-width: 600px) {
+        font-size: 12px; 
+     
+        }  
+  }
+  .show{
+
+    height: auto;
+    max-height: 9999px;
+    // padding: 1rem 0rem 1rem 1.5rem;
+    line-height: 32px;
+    // transition: max-height 0.7s cubic-bezier(1,0,1,0) ;
+
+  }
+
+  .hide{
+   
+     transition: padding  0.8s cubic-bezier(0,1,0,1);
+    
+  }

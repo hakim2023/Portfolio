@@ -99,7 +99,20 @@
         
        
     }
+    @media only screen and (max-width: 800px) {
+               
+        width: 10rem;
+        height: 3.5rem;
+        // align-items: center;
+        h2{
+            // border: 1px solid blue;
+            line-height: 0rem;
+          
+
+        }
+     
+    }
 }.github__container:hover{
     color: #7ec0ea;
   
-}
+} 

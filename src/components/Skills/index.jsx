@@ -1,10 +1,14 @@
 import React from 'react'
 import './Skills.scss'
 import ProgressBar from './../../components/Progress-bar'
-import CircleBar from './../../components/Circle-bar'
+import CircleBar from './../../components/Circle-bar';
+import Accordion from './../../components/Accordion';
+import ContactUs from './../../components/ContactUs';
+
+
 import {skills} from './../../data/skills';
 import { languages } from '../../data/languages';
-
+import { study } from '../../data/study';
 
 
 
@@ -93,9 +97,26 @@ export default function Skills() {
                                 ))}   
                 </div>
                 </div>
+                <div class="comp-contain row  d-flex justify-content-center align-items-center py-3 mt-3 ">
+                    <div class="diploma-container col-11 py-3 mt-3">
+
+                        <h3 class="col-10 mx-auto  pb-3 py-4 ">Formations</h3>
+                        {study.map((s) => (
+                                <Accordion
+                                              key={s.id}
+                                              name={s.name}
+                                              description={s.description}
+                                             
+                              />               
+                              ))}   
+
+                    </div>
+                </div>
           </div>
          </div>
          </div>
+
+   
          
          </section>
 <section id='projets'>
@@ -109,14 +130,7 @@ export default function Skills() {
   </p>
 </section>
 <section id='contact'>
-  <p style={{color:'black'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nisi necessitatibus similique eos error, quos molestias dicta iusto dolorum eveniet nihil natus explicabo? Doloribus quaerat aut minus cumque! Incidunt, iste.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam ducimus laudantium, dolores atque suscipit neque voluptates debitis sed ea velit libero, incidunt dolorum minus tenetur! Soluta ea ut doloremque.
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, velit delectus? Placeat, minima expedita iure inventore velit accusantium culpa explicabo, fugit asperiores suscipit assumenda, dignissimos provident corrupti totam nostrum doloribus?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quasi? Consequuntur reprehenderit numquam ex natus modi unde, eos quas accusamus quasi adipisci aspernatur iste quis consectetur. Iste asperiores temporibus reprehenderit.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cupiditate, aliquam laboriosam molestias alias culpa qui debitis quia iure dicta error delectus, odio possimus illo numquam saepe explicabo a animi.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, expedita soluta blanditiis vel pariatur laudantium nisi dignissimos eveniet rem necessitatibus, voluptas eaque vitae saepe reprehenderit distinctio odit dolores voluptatem laborum.
-
-  </p>
+<ContactUs/>
 </section>
        </>)
 }

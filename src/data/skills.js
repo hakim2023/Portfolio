@@ -28,7 +28,7 @@ export const skills = [
       },
          {
         id:5,
-        name:'MangoDB',
+        name:'Symfony',
         color:'#e48e00',
         percentage:30
      },
@@ -40,7 +40,7 @@ export const skills = [
      },
      {
         id:7,
-        name:'Bootstrap',
+        name:'PHP',
         color:'#7c0af8',
         percentage:60
      },
