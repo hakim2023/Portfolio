@@ -4,6 +4,8 @@ body{
   padding: 0;
   color:white !important;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  
 }
 
 p{

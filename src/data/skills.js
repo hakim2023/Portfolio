@@ -30,25 +30,25 @@ export const skills = [
         id:5,
         name:'Symfony',
         color:'#e48e00',
-        percentage:30
+        percentage:25
      },
      {
         id:6,
         name:'NodeJS',
         color:'#74aa64',
-        percentage:35
+        percentage:30
      },
      {
         id:7,
         name:'PHP',
         color:'#7c0af8',
-        percentage:60
+        percentage:30
      },
      {
       id:8,
       name:'Sass',
       color:'#be608b',
-      percentage:30
+      percentage:35
    },
      
       

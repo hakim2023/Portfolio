@@ -1,7 +1,7 @@
 import React, { useRef , useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactUs.scss'
-
+import { FaEnvelope} from 'react-icons/fa';
 
 export default function ContactUs(){
     const [message, setMessage] = useState(''); 
@@ -28,11 +28,17 @@ export default function ContactUs(){
           e.target.reset();
       }, (error) => {
           console.log(error.text);
+          setMessage('Message non envoyé, vous pouvez me contacter par email.')
       });
   };
 
   return (<>
-  <h3>Me contacter</h3>
+  <div className="contact__form__container">
+      <div className='contact__title'>  
+        <h2>  Me contacter</h2>
+        <span><FaEnvelope/></span>
+       </div>
+ 
     <form className='contact__form' ref={form} onSubmit={sendEmail}>
       {/* <label>Name</label>
       <input type="text" name="user_name" /> */}
@@ -42,7 +48,7 @@ export default function ContactUs(){
       <textarea name="message" />
       <input onClick={handleButtonClick} type="submit" value="Envoyer" />
     </form>
-    <h4>{message}</h4>
-
+    <h4 className='py-4 '>{message}</h4>
+    </div>
     </>);
 };

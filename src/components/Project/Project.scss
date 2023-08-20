@@ -1,0 +1,48 @@
+.projects__container{
+    
+    background: linear-gradient(to top right , rgb(53, 51, 51) , rgb(44, 44, 44)) !important;
+   
+}
+.projects__wrapper{
+    display: flex;
+}
+
+
+.proj__contain{
+  
+  
+    // background: linear-gradient(to  top right , #58b792,#036640) !important ;
+ border-radius: 10px;
+display: flex;
+padding: 2rem;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+@media screen and (max-width: 765px) {
+    flex-direction: column;
+    padding: 0.5rem;
+    
+      }
+}
+.project__contain{
+    width: 50%;
+    // background-color: #0275d8;
+    padding: 1rem;
+    
+    @media screen and (max-width: 765px) {
+        width: 90%;
+        
+          }
+          @media screen and (max-width: 500px) {
+            width: 100%;
+            
+              }
+    .card{
+        cursor: pointer;
+    }
+}
+
+.icon__project{
+    color: #0275d8 ;
+}
