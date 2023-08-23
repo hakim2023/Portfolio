@@ -18,29 +18,47 @@ padding: 2rem;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+gap: 1.5rem;
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 800px) {
     flex-direction: column;
     padding: 0.5rem;
     
       }
 }
 .project__contain{
-    width: 50%;
-    // background-color: #0275d8;
+    width: 46%;
     padding: 1rem;
+    .card{
+        background-color: transparent;
+        cursor: pointer;
+    }
+  
+   
+    img{
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 5px;
+       
+    }
+    img:hover{
+        opacity: 0.5;
+    }
     
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 800px) {
         width: 90%;
-        
+        img{
+            height: 300px;
+        }
           }
           @media screen and (max-width: 500px) {
             width: 100%;
+            img{
+                height: 250px
+            }
             
               }
-    .card{
-        cursor: pointer;
-    }
+ 
 }
 
 .icon__project{

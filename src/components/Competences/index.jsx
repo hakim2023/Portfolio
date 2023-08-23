@@ -92,10 +92,10 @@ export default function Competences() {
                                 ))}   
                 </div>
                 </div>
-                <div class="comp-contain row  d-flex justify-content-center align-items-center py-3 mt-3 ">
-                    <div class="diploma-container col-11 py-3 mt-3">
+                <div className="comp-contain row  d-flex justify-content-center align-items-center py-3 mt-3 ">
+                    <div className="diploma-container col-11 py-3 mt-3">
 
-                        <h3 class="col-11 mx-auto  pb-3 py-4 ">Formations</h3>
+                        <h3 className="col-11 mx-auto  pb-3 py-4 ">Formations</h3>
                         {study.map((s) => (
                                 <Accordion
                                               key={s.id}

@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Circle-bar.scss';
-import { Circle } from 'rc-progress';
 
 export default function CircleBar(props) {
   const [isInViewport, setIsInViewport] = useState(false);
@@ -40,10 +39,10 @@ export default function CircleBar(props) {
           stroke={props.color}
           cx="50%"
           cy="70px"
-          r={isSmallScreen ? "50px" : "60px"} // Adjusted radius based on screen width
-          strokeWidth={isSmallScreen ? "10" : "15"} // Adjusted stroke width based on screen width
+          r={isSmallScreen ? "50px" : "60px"} 
+          strokeWidth={isSmallScreen ? "10" : "15"} 
           strokeDasharray="377"
-          strokeDashoffset={(100 - progressBarNow) / 100 * 377}
+          strokeDashoffset={(100 - progressBarNow) / 100 * 377 }
           fill="transparent"
           style={{ transition: 'stroke-dashoffset 0.8s ease-in-out' }}
         />
