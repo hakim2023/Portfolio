@@ -2,8 +2,8 @@ export const study = [
 	
     {
        id:1,
-       name:'Licence en Physique',
-       description:"Licence en Physique obtenue à l'Université de Paris Diderot. Solides connaissances théoriques en mécanique, optique, électrmagnetisme, relativité et physique quantique. Expérience pratique en résolution de problèmes complexes, analyse de données expérimentales et modélisation mathématique."
+       name:'Licence Mécanique',
+       description:"Licence en Mécanique obtenue à l'Université de Paris Jussieu. Solides connaissances théoriques en mécanique, optique, électrmagnetisme. Expérience pratique en résolution de problèmes complexes, analyse de données expérimentales et modélisation mathématique."
     },
     {
         id:2,

@@ -18,12 +18,15 @@ const Modal = ({ project, onClose }) => {
             </button>
           ))}
         </div>
-        <a href={project.github}><FaGithub/></a>
-        <div className="image-gallery">
+        <div className='site__container'>
+        <a className='site__logo' href={project.site} target='_blank' rel='noreferrer'>www</a>
+        <a className='github__logo' href={project.github} target='_blank' rel='noreferrer'><FaGithub/></a>
+        </div>
+        {/* <div className="image-gallery">
           {project.pictures.map((picture, index) => (
             <img key={index} src={picture} alt={`Imag-x ${index + 1}`} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 import './Projects.scss'
 import Project from './../../components/Project';
 import { projects } from '../../data/projects'
-import { FaProjectDiagram } from 'react-icons/fa';
+
 
 import { useState } from 'react';
 import Modal from './../../components/Modal'
@@ -63,7 +63,6 @@ export default function Projects(props) {
   return (
     <>
       <div className='container-fluid projects__container'>
-        {/* ... your existing code ... */}
         <div className="row projects__wrapper d-flex justify-content-center align-items-center mx-auto">
           <div className="col-12 col-md-10 proj__contain">
             {projects.map((project) => (
@@ -74,7 +73,8 @@ export default function Projects(props) {
                 shortDescription={project.shortDescription}
                 longueDescription={project.longueDescription}
                 usedTech={project.usedTech}
-                onClick={() => openModal(project)} // Add this onClick handler
+                site={project.site}
+                onClick={() => openModal(project)} 
               />
             ))}
           </div>

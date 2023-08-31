@@ -27,9 +27,9 @@ export default function CircleBar(props) {
     };
   }, []);
 
-  const progressBarNow = isInViewport ? props.percentage : 0;
-
   const isSmallScreen = window.innerWidth < 900;
+  const progressBarNow = isInViewport ? props.percentage : 0;
+  const strokeDashoffset = (100 - progressBarNow) / 100 * 377;
 
   return (
     <div>
@@ -42,7 +42,7 @@ export default function CircleBar(props) {
           r={isSmallScreen ? "50px" : "60px"} 
           strokeWidth={isSmallScreen ? "10" : "15"} 
           strokeDasharray="377"
-          strokeDashoffset={(100 - progressBarNow) / 100 * 377 }
+          strokeDashoffset={isNaN(strokeDashoffset) ? "0" : strokeDashoffset}
           fill="transparent"
           style={{ transition: 'stroke-dashoffset 0.8s ease-in-out' }}
         />

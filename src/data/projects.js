@@ -8,11 +8,7 @@ export const projects = [
         title: "Booki",
         cover: Booki_cover,
         pictures: [
-          // "https://i.ibb.co/ssb4tTn/grimoire3.png",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+
         ],
         shortDescription: "",
         longueDescription: " Projet d’étude dans le cadre de ma formation avec Openclassrooms.Création la page d'accueil d'une agence de voyage 'Booki' avec HTML & CSS ",
@@ -22,7 +18,8 @@ export const projects = [
           "CSS"
          
         ],
-        github:"https://github.com/hakim2023/Booki"
+        github:"https://github.com/hakim2023/Booki",
+        site:"ouadie-booki.netlify.app"
       
       },
       {
@@ -30,11 +27,7 @@ export const projects = [
         title: "Portfolio Sophie",
         cover: Sophie_cover,
         pictures: [
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+
         ],
         shortDescription: "",
         longueDescription: "Projet d’étude dans le cadre de ma formation avec Openclassrooms, création d'un site web pour l'architecte Sophie Bluel, le but est de réaliser plusieurs fonctionnalités et travailler avec des données dynamiques provenant d’une API en Vanilla Javascript",
@@ -53,11 +46,7 @@ export const projects = [
         title: "Kasa",
         cover: Kasa_cover,
         pictures: [
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-          // "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+       
         ],
         shortDescription: "  ",
         longueDescription: "La mission est de créer une application web de location immobilière avec React",
@@ -68,7 +57,8 @@ export const projects = [
           "Sass"
          
         ],
-        github:"https://github.com/hakim2023/Kasa"
+        github:"https://github.com/hakim2023/Kasa",
+        site:"https://ouadie-kasa.netlify.app/"
        
       },
       {
@@ -77,20 +67,20 @@ export const projects = [
         cover: Grimoire_cover,
         pictures: [
 
-          // "https://i.ibb.co/WzxnmQD/Screenshot-2023-08-23-at-10-31-42-Figma.png",
-          // "https://i.ibb.co/BZ8wjsQ/Screenshot-2023-08-23-at-10-30-35-Figma.png",
-          // "https://i.ibb.co/ssb4tTn/grimoire3.png"
+          
         ],
         shortDescription: "  ",
         longueDescription: "Projet d’étude dans le cadre de ma formation avec Openclassrooms ma mission est de développer le back-end d'un site de notation de livres 'Mon Vieux Grimoire' qui permettra aux membres d’ajouter un nouveau livre et de mettre une note visible par le public.",
     
         usedTech: [
+          "React",
           "NodeJS",
           "ExpressJS",
           "MangoDB"
          
         ],
-        github:"https://github.com/hakim2023/Grimoire"
+        github:"https://github.com/hakim2023/Grimoire",
+        site:""
        
        
       },

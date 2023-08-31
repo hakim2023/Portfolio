@@ -29,18 +29,46 @@
     @media screen and (max-width: 800px) {
       width: 90%;
     }
-    a{
+
+    .site__container{
+      padding-top: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+    
+    .github__logo{
+     
+      padding: 0.5rem 1.7rem;
+      text-decoration: none;
+
+      border-radius: 10px;
+      color: black;
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.785);
+      border: 1px solid black;
+      align-self: flex-end;
+      @media screen and (max-width: 800px) {
+        padding: 0.4rem 1.2rem;
+        font-size: 1rem;
+    }
+    }
+    .site__logo{
      
       padding: 0.5rem 0.8rem;
       text-decoration: none;
-      // border: 1px solid black;
       border-radius: 10px;
       color: black;
-      font-size: 2rem;
-      // background-color: rgb(242, 242, 242);
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.785);
+      border: 1px solid black;
       align-self: flex-end;
+      @media screen and (max-width: 800px) {
+        padding: 0.4rem 0.6rem;
+        font-size: 1rem;
     }
-
+    }
+  }
     // .image-gallery {
     //   overflow: auto; 
     //   height:600px; 
