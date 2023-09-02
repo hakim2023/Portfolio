@@ -3,7 +3,7 @@ import './Banner.scss'
 import { Link } from 'react-router-dom';
 // import background from '../../assets/background.jpeg'
 import {FaGithub} from 'react-icons/fa';
-import profile__photo from '../../assets/photo.jpg'
+import profile__photo from '../../assets/photo.webp'
 
 export default function Banner() {
   return (
