@@ -1,7 +1,7 @@
-import Booki_cover from './../assets/booki_cover.png';
-import Sophie_cover from './../assets/Sophie_cover.png';
-import Kasa_cover from './../assets/Kasa_cover.png';
-import Grimoire_cover from './../assets/Grimoire_cover.png';
+import Booki_cover from './../assets/booki_cover.webp';
+import Sophie_cover from './../assets/Sophie_cover.webp';
+import Kasa_cover from './../assets/Kasa_cover.webp';
+import Grimoire_cover from './../assets/Grimoire_cover.webp';
 export const projects = [
 	{
         id: "1",
@@ -19,7 +19,7 @@ export const projects = [
          
         ],
         github:"https://github.com/hakim2023/Booki",
-        site:"ouadie-booki.netlify.app"
+        site:"https://ouadie-booki.netlify.app/"
       
       },
       {

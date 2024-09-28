@@ -20,7 +20,7 @@ export default function ContactUs(){
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k6drovk', 'template_qmbgo6q', form.current, 'TQYQMH7h8HmEd0qMG')
+   emailjs.sendForm('service_oy3jg73', 'template_qmbgo6q', form.current, 'mdQqZjGuf41Z8RA6U')
       .then((result) => {
           console.log(result.text);
           console.log('message sent');
