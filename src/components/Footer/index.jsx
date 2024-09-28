@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
     
-    <h3>By Ouadie {new Date().getFullYear()} .</h3>
+    <h3>By Ouadie {new Date().getFullYear()}.</h3>
 </footer>
   )
 }
